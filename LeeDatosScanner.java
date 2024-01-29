@@ -3,11 +3,12 @@ import java.util.Scanner;
 public class LeeDatosScanner {
     public static void main(String[] args) {
         
-        Scanner S = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
         System.out.println("Ingresa tu nombre: ");
-        String nombre = S.nextLine();
+        String nombre = s.nextLine();
         System.out.println("Hola "+ nombre);
+        s.close();
 
     }
 }
