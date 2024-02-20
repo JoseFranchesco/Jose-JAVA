@@ -4,7 +4,7 @@ import java.util.Scanner;
 
 public class ejercicio4 {
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
         System.out.println("Por favor, introduzca las tres notas:");
         double nota1 = pedirNota("Nota 1: ");
@@ -18,14 +18,14 @@ public class ejercicio4 {
         String boletin = obtenerBoletin(media);
         System.out.println("Calificación del boletín: " + boletin);
 
-        scanner.close();
+        s.close();
     }
 
     public static double pedirNota(String mensaje) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner s = new Scanner(System.in);
 
         System.out.print(mensaje);
-        return scanner.nextDouble();
+        return s.nextDouble();
     }
 
     public static double calcularMedia(double nota1, double nota2, double nota3) {
