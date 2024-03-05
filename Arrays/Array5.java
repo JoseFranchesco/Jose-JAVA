@@ -6,13 +6,13 @@ public class Array5 {
 
         for (int i = 0; i < numeros.length; i++) {
             numeros[i] = (int)(Math.random() * 10);
-            System.out.print(numeros[i]+" - ");
+            System.out.println(numeros[i]);
         }
         for (int i = 0; i < numeros.length; i++) {
             if (numeros[i] % 2 == 0) {
-                System.out.print(numeros[i]+ " Par ");
+                System.out.println(numeros[i]+ " Par ");
             }else{
-                System.out.print(numeros[i]+ " Impar ");
+                System.out.println(numeros[i]+ " Impar ");
             }
 
         }
