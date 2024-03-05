@@ -27,7 +27,7 @@ public class ejercicio4 {
         System.out.print(mensaje);
         return s.nextDouble();
     }
-
+    
     public static double calcularMedia(double nota1, double nota2, double nota3) {
         return (nota1 + nota2 + nota3) / 3;
     }
@@ -43,5 +43,6 @@ public class ejercicio4 {
         } else {
             return "Nota fuera de rango";
         }
+        
     }
 }

@@ -12,6 +12,6 @@ public class Problema3 {
         double tiempoDeCaida = Math.sqrt((2 * altura) / gravedad); //Usamos la formuola de tiempo de caida que es Tiempo de caida= raiz de 2 por la altura entre la gravedad
 
         System.out.println("El objeto tardara en caer: " + tiempoDeCaida + " segundos.");//texta para dar el resultado
-
+        s.close();
     }
 }

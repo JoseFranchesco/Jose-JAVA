@@ -34,6 +34,7 @@ public class Problema2 {
         } else {
             System.out.println("No se han introducido secuencias repetidas.");
         }
+        s.close();
          }
     }
 }

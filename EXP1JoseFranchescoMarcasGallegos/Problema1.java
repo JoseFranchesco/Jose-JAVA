@@ -29,5 +29,6 @@ public class Problema1 {
                 }
             }
         }
+        s.close();
     }
 }
