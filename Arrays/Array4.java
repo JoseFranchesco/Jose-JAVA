@@ -1,6 +1,5 @@
 package Arrays;
 
-import java.util.Random;
 
 public class Array4 {
     public static void main(String[] args) {
