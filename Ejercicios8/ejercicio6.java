@@ -6,31 +6,23 @@ public class ejercicio6 {
         
         int fila;
         int columna;
-        
         // Genera el contenido del array sin que se repita ningún valor
         boolean repetido;
         int i;
         int j;
         
         for(fila = 0; fila < 6; fila++) {
-        for(columna = 0; columna < 10; columna++) {
+            for(columna = 0; columna < 10; columna++) {
         do {
-        num[fila][columna] = (int)(Math.random() *
-        
-        1001);
+        num[fila][columna] = (int)(Math.random() *1001);
         
         // Comprueba si el número generado ya está en el array.
         repetido = false;
         for (i = 0; i < 10 * fila + columna; i++) {
-        if (num[fila][columna] == num[i / 10][i %
-        
-        10]) {
-        
-        repetido = true;
+        if (num[fila][columna] == num[i / 10][i % 10]) {
+        repetido = true;}
         }
-        }
-        } while (repetido);
-        }
+        } while (repetido);}
         }
         
         int minimo = Integer.MAX_VALUE;
@@ -43,20 +35,20 @@ public class ejercicio6 {
         
         System.out.print("\n ");
         for(columna = 0; columna < 10; columna++) {
-        System.out.print(" " + columna + " ");
+            System.out.print(" " + columna + " ");
         }
         System.out.println();
         
         System.out.print(" ┌");
         for(columna = 0; columna < 10; columna++) {
-        System.out.print("──────");
+            System.out.print("──────");
         }
         System.out.println("┐");
         
         for(fila = 0; fila < 6; fila++) {
-        System.out.print(" " + fila + " │");
+            System.out.print(" " + fila + " │");
         for(columna = 0; columna < 10; columna++) {
-        System.out.printf("%5d ", num[fila][columna]);
+             System.out.printf("%5d ", num[fila][columna]);
         
         // Calcula el mínimo y guarda sus coordenadas
         if (num[fila][columna] < minimo) {
@@ -77,7 +69,7 @@ public class ejercicio6 {
         }
         System.out.print(" └");
         for(columna = 0; columna < 10; columna++) {
-        System.out.print("──────");
+            System.out.print("──────");
         }
         
         System.out.println("┘\n\nEl máximo es " + maximo +

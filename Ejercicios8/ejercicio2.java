@@ -13,7 +13,7 @@ public class ejercicio2 {
         
         for(fila = 0; fila < 4; fila++) {
         for(columna = 0; columna < 5; columna++) {
-        System.out.print("Fila " + fila + ",columna " + columna + ": ");
+            System.out.print("Fila " + fila + ",columna " + columna + ": ");
         num[fila][columna] =
         
         Integer.parseInt(System.console().readLine());
@@ -26,22 +26,16 @@ public class ejercicio2 {
         // Muestra los datos y las sumas parciales de las filas
         
         int sumaFila;
-        for(fila = 0; fila < 4; fila++) {
-        sumaFila = 0;
-        for(columna = 0; columna < 5; columna++) {
-        System.out.printf("%7d ",
-        
-        num[fila][columna]);
-        
+        for(fila = 0; fila < 4; fila++) { sumaFila = 0;
+            for(columna = 0; columna < 5; columna++) {
+                System.out.printf("%7d ",num[fila][columna]);
         sumaFila += num[fila][columna];
         }
         System.out.printf("|%7d\n", sumaFila);
         }
-        
         // Muestra las sumas parciales de las columnas
         for(columna = 0; columna < 5; columna++) {
-        System.out.print("----------");
-        
+            System.out.print("----------");
         }
         System.out.println("-----------");
         
